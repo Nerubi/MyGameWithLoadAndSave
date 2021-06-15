@@ -1,0 +1,128 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 32667 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Unity Projects\2020.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Repo/My game with load and save/Highway Madness
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52390
+Successfully changed project path to: E:/Repo/My game with load and save/Highway Madness
+E:/Repo/My game with load and save/Highway Madness
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 22.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.11f1 (99c7afb366b3)
+[Subsystems] Discovering subsystems at path E:/Unity Projects/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Repo/My game with load and save/Highway Madness/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1080 Ti (ID=0x1b06)
+    Vendor:   
+    VRAM:     11127 MB
+    Driver:   27.21.14.6677
+Initialize mono
+Mono path[0] = 'E:/Unity Projects/2020.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity Projects/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Unity Projects/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity Projects/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Unity Projects/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001309 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 21.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.831 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002518 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1386 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.6 MB.
+System memory in use after: 64.7 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1819.
+Total: 1.802700 ms (FindLiveObjects: 0.140000 ms CreateObjectMapping: 0.031600 ms MarkObjects: 1.562900 ms  DeleteObjects: 0.067100 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes
+  artifactKey: Guid(132099104e1aaa9468b84cda5e8eed85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(132099104e1aaa9468b84cda5e8eed85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ca98b2940132c585bd230f2a62b29a') in 0.003875 seconds
+  Import took 0.005642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.831830 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(132099104e1aaa9468b84cda5e8eed85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(132099104e1aaa9468b84cda5e8eed85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36ca98b2940132c585bd230f2a62b29a') in 0.001027 seconds
+  Import took 0.002927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.314431 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(1f09c1169e99fec48a7e3a5c14933ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(1f09c1169e99fec48a7e3a5c14933ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6ee1875e0246f68a6e6ece1f9b7024') in 0.009675 seconds
+  Import took 0.011707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.709692 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85059f4f9e1a832ed95adaa0d25c5c4c') in 0.001609 seconds
+  Import took 0.003564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.521942 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(452b150d92c66c34b858e9ecccd6d78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(452b150d92c66c34b858e9ecccd6d78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fab86da5f32be503b3380e25ad0e287') in 0.001392 seconds
+  Import took 0.003625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.419837 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(cb2832c68c8dc1b44998f6e6cb2e8a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(cb2832c68c8dc1b44998f6e6cb2e8a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e56faa1c0f2e4bbd467d47412a9290aa') in 0.001212 seconds
+  Import took 0.003159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 126.967643 seconds.
+  path: Assets/Fonts/SummerParty - Personal Use.otf
+  artifactKey: Guid(74f6c376beddc164989626044fff1a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/SummerParty - Personal Use.otf using Guid(74f6c376beddc164989626044fff1a10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8204fbfec1c5edb160a2ab3db1b70a2b') in 0.095757 seconds
+  Import took 0.097844 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
