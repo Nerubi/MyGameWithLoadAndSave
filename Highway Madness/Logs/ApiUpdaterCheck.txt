@@ -1,0 +1,57 @@
+[api-updater (non-obsolete-error-filter)] 16/06/2021 17:57:38 : Starting E:/Unity Projects/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 54.8534ms
+moved types parse time: 44ms
+candidates parse time : 8ms
+C# parse time         : 195ms
+candidates check time : 307ms
+console write time    : 25ms
+
+[api-updater (non-obsolete-error-filter)] 16/06/2021 17:57:46 : Starting E:/Unity Projects/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 49.5732ms
+moved types parse time: 44ms
+candidates parse time : 9ms
+C# parse time         : 153ms
+candidates check time : 1063ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 16/06/2021 18:03:08 : Starting E:/Unity Projects/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 52.5807ms
+moved types parse time: 43ms
+candidates parse time : 10ms
+C# parse time         : 151ms
+candidates check time : 315ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 16/06/2021 18:03:43 : Starting E:/Unity Projects/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] Exception caught while loading types from E:\Repo\My game with load and save\MyGameWithLoadAndSave\Highway Madness\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll (some types may not be loaded)
+	Exception of type 'System.Reflection.ReflectionTypeLoadException' was thrown.
+	  at (wrapper managed-to-native) System.Reflection.Assembly.GetTypes(System.Reflection.Assembly,bool)
+  at System.Reflection.Assembly.GetTypes () [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at APIUpdater.NonObsoleteApiUpdaterDetector.ExtraInfoParser+<LoadTypesWithMovedFromAttributeAsync>d__3.MoveNext () [0x000c8] in <68bff7873e0e4aa69a14dfc30bebbe3e>:0 
+	Could not load file or assembly 'UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies.
+
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 48.1243ms
+moved types parse time: 54ms
+candidates parse time : 8ms
+C# parse time         : 317ms
+candidates check time : 319ms
+console write time    : 0ms
+
+[api-updater (non-obsolete-error-filter)] 16/06/2021 18:04:01 : Starting E:/Unity Projects/2020.3.11f1/Editor/Data/Tools/ScriptUpdater/APIUpdater.NonObsoleteApiUpdaterDetector.exe
+[api-updater (non-obsolete-error-filter)] 
+----------------------------------
+jit/startup time      : 50.8368ms
+moved types parse time: 42ms
+candidates parse time : 9ms
+C# parse time         : 159ms
+candidates check time : 647ms
+console write time    : 0ms
+
