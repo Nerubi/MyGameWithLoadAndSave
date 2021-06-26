@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6993003655074953827}
   - component: {fileID: 6993003655069947747}
   - component: {fileID: 3804700157873463295}
+  - component: {fileID: -6748859216744000314}
   m_Layer: 0
   m_Name: Tree_1
   m_TagString: Untagged
@@ -116,3 +117,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedOfObjectTowardsPlayer: 5
+--- !u!114 &-6748859216744000314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6993003655077209251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab1937d7dc58674a9788e6608c26b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

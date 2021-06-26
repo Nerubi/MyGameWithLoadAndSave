@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,29 +27,45 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float maxRightCarSpawn = 0.74f;
     [SerializeField] private float randomLeftRightForCars;
     [SerializeField] private Vector3 carSpawn;
+    [SerializeField] private Vector3 powerUpSpawn;
+    [SerializeField] private float randomPowerUps;
 
     [SerializeField] private float ycord = 1;
     [SerializeField] private float zcord = 8;
 
     public GameObject road;
     [SerializeField] private Vector3 roadPosition;
+    [SerializeField] private float startAfterSecondsRoad = 0;
+    [SerializeField] private float repeatAfterSecondsRoad = 2;
+
+    public GameObject[] powerUpsPrefabs;
+
+
+    private PlayerControl PlayerContolScript;
+    public TextMeshProUGUI coinText;
+    public TextMeshProUGUI healthText;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("SpawnTrees", startAfterSeconds, repeatAfterSeconds);
         InvokeRepeating("SpawnCars", startAfterSecondsCars, repeatAfterSecondsCars);
+        InvokeRepeating("SpawnRoads", startAfterSecondsRoad, repeatAfterSecondsRoad);
+        PlayerContolScript = GameObject.Find("Player").GetComponent<PlayerControl>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(road.transform.position.z < -16)
+        if(PlayerContolScript.playerHealth <= 0)
         {
-            Destroy(road);
-            roadPosition = new Vector3(0, 0, 43);
-            Instantiate(road, roadPosition, road.transform.rotation);
+            CancelInvoke();
         }
+
+        healthText.text = "Health: " + PlayerContolScript.playerHealth;
+        coinText.text = "Coins: " + PlayerContolScript.coinsAmount;
+
+
     }
 
 
@@ -75,7 +92,46 @@ public class GameManager : MonoBehaviour
         randomCars = Random.Range(minRangeCars, maxRangeCars);
         randomLeftRightForCars = Random.Range(maxLeftCarSpawn, maxRightCarSpawn);
         carSpawn = new Vector3(randomLeftRightForCars, ycord, zcord);
+        randomPowerUps = Random.Range(0, 2);
         Instantiate(carsPrefabs[randomCars], carSpawn, carsPrefabs[randomCars].gameObject.transform.rotation);
+
+        if(randomCars == 1 )
+        {
+            if(randomPowerUps == 0)
+            {
+                powerUpSpawn = new Vector3 (0, 1, 10);
+                Instantiate(powerUpsPrefabs[0], powerUpSpawn, powerUpsPrefabs[0].gameObject.transform.rotation);
+            }
+
+            if(randomPowerUps == 1)
+            {
+                powerUpSpawn = new Vector3(0.63f, 1, 10);
+                Instantiate(powerUpsPrefabs[0], powerUpSpawn, powerUpsPrefabs[0].gameObject.transform.rotation);
+            }
+            
+        }
+
+        if(randomCars == 2)
+        {
+            if (randomPowerUps == 0)
+            {
+                powerUpSpawn = new Vector3(0, 1, 10);
+                Instantiate(powerUpsPrefabs[1], powerUpSpawn, powerUpsPrefabs[1].gameObject.transform.rotation);
+            }
+
+            if (randomPowerUps == 1)
+            {
+                powerUpSpawn = new Vector3(0.63f, 1, 10);
+                Instantiate(powerUpsPrefabs[1], powerUpSpawn, powerUpsPrefabs[1].gameObject.transform.rotation);
+            }
+        }
     }
+
+    void SpawnRoads()
+    {
+        roadPosition = new Vector3(0.34f, 0.98f, 19);
+        Instantiate(road, roadPosition, road.transform.rotation);
+    }
+
 
 }
