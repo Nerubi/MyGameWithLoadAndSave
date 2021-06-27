@@ -2029,3 +2029,117 @@ System memory in use after: 78.1 MB.
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2173.
 Total: 2.004000 ms (FindLiveObjects: 0.167800 ms CreateObjectMapping: 0.036300 ms MarkObjects: 1.729100 ms  DeleteObjects: 0.069900 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002807 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.866 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1629 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.5 MB.
+System memory in use after: 82.3 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2306.
+Total: 2.750600 ms (FindLiveObjects: 0.180000 ms CreateObjectMapping: 0.053000 ms MarkObjects: 2.266800 ms  DeleteObjects: 0.249600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003049 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.820 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1629 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.5 MB.
+System memory in use after: 82.3 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2309.
+Total: 1.979200 ms (FindLiveObjects: 0.167100 ms CreateObjectMapping: 0.057100 ms MarkObjects: 1.610500 ms  DeleteObjects: 0.143800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002857 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.795 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1629 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.5 MB.
+System memory in use after: 82.3 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2312.
+Total: 2.080800 ms (FindLiveObjects: 0.144000 ms CreateObjectMapping: 0.040500 ms MarkObjects: 1.758300 ms  DeleteObjects: 0.137100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003033 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.761 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1629 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.5 MB.
+System memory in use after: 82.3 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2315.
+Total: 2.121700 ms (FindLiveObjects: 0.176500 ms CreateObjectMapping: 0.049300 ms MarkObjects: 1.743400 ms  DeleteObjects: 0.151700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 935.374730 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(1f09c1169e99fec48a7e3a5c14933ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(1f09c1169e99fec48a7e3a5c14933ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0fae4d6a409bfccf3411d265d1d60e2') in 0.082549 seconds
+  Import took 0.085079 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003042 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.771 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1629 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 82.5 MB.
+System memory in use after: 82.4 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 2318.
+Total: 2.098400 ms (FindLiveObjects: 0.170900 ms CreateObjectMapping: 0.040200 ms MarkObjects: 1.704300 ms  DeleteObjects: 0.182200 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

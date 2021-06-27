@@ -752,7 +752,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The player with the hightest Score
+  m_text: The player with the highest Score
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c758737e5720f243a6a3f4a76f6224b, type: 2}
   m_sharedMaterial: {fileID: 6215122675767279387, guid: 4c758737e5720f243a6a3f4a76f6224b,
@@ -1439,7 +1439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f973c7b160db04b45b2215e3519f28fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transectionSpeed: 0.5
+  transectionSpeed: 2
 --- !u!114 &1359554979
 MonoBehaviour:
   m_ObjectHideFlags: 0
