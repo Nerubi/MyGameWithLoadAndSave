@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,10 +45,17 @@ public class GameManager : MonoBehaviour
     private PlayerControl PlayerContolScript;
     public TextMeshProUGUI coinText;
     public TextMeshProUGUI healthText;
+    public GameObject GameOverText;
+    public GameObject HighScoreButton;
+    public GameObject RestartButton;
 
     // Start is called before the first frame update
     void Start()
     {
+        GameOverText.SetActive(false);
+        HighScoreButton.SetActive(false);
+        RestartButton.SetActive(false);
+
         InvokeRepeating("SpawnTrees", startAfterSeconds, repeatAfterSeconds);
         InvokeRepeating("SpawnCars", startAfterSecondsCars, repeatAfterSecondsCars);
         InvokeRepeating("SpawnRoads", startAfterSecondsRoad, repeatAfterSecondsRoad);
@@ -60,10 +68,14 @@ public class GameManager : MonoBehaviour
         if(PlayerContolScript.playerHealth <= 0)
         {
             CancelInvoke();
+            GameOverText.SetActive(true);
+            HighScoreButton.SetActive(true);
+            RestartButton.SetActive(true);
         }
 
         healthText.text = "Health: " + PlayerContolScript.playerHealth;
         coinText.text = "Coins: " + PlayerContolScript.coinsAmount;
+
 
 
     }

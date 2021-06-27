@@ -26,4 +26,14 @@ public class SwitchScenes : MonoBehaviour
         Application.Quit();
 #endif
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void BackToMain()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

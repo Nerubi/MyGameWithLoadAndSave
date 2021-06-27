@@ -6,7 +6,6 @@ public class MainManager : MonoBehaviour
 {
 
     public static MainManager Instance;
-    private PlayerControl playerControlScript;
     public int coinsCollected;
 
     private void Awake()
@@ -21,15 +20,8 @@ public class MainManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        playerControlScript = GameObject.Find("Player").GetComponent<PlayerControl>();
-        coinsCollected = playerControlScript.coinsAmount;
+        coinsCollected = 0;
     }
-
-    private void Update()
-    {
-        coinsCollected = playerControlScript.coinsAmount;
-    }
-
 
 
 }

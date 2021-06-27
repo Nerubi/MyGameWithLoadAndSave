@@ -6,6 +6,11 @@ public class PlayerControl : MonoBehaviour
 {
     public int playerHealth = 3;
     public int coinsAmount = 0;
+    public AudioClip jumpSound;
+    public AudioClip powerUpSound;
+    public AudioClip playerHitSound;
+    public ParticleSystem playerHit;
+    private AudioSource playerAudio;
 
     private Rigidbody playerBody;
     private Animator playerAnim;
@@ -21,6 +26,8 @@ public class PlayerControl : MonoBehaviour
     {
         playerBody = gameObject.GetComponent<Rigidbody>();
         playerAnim = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
+        MainManager.Instance.coinsCollected = 0;
     }
 
     // Update is called once per frame
@@ -40,6 +47,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isPlayerOnFloor)
         {
+            playerAudio.PlayOneShot(jumpSound);
             playerBody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isPlayerOnFloor = false;
         }
@@ -60,6 +68,8 @@ public class PlayerControl : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Car"))
         {
+            Instantiate(playerHit, gameObject.transform.position, gameObject.transform.rotation);
+            playerAudio.PlayOneShot(playerHitSound);
             playerHealth--;
             if (playerHealth > 0) {
                 Destroy(collision.gameObject);
@@ -77,10 +87,13 @@ public class PlayerControl : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Health"))
         {
+            playerAudio.PlayOneShot(powerUpSound);
             playerHealth++;
         }
         if (other.gameObject.CompareTag("PowerUp"))
         {
+            MainManager.Instance.coinsCollected = MainManager.Instance.coinsCollected + 1;
+            playerAudio.PlayOneShot(powerUpSound);
             coinsAmount++;
         }
     }
